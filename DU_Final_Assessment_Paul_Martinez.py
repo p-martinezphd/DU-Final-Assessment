@@ -484,16 +484,23 @@ EXPECTED_COLUMNS = [
     "term_code",
     "gender",
     "race_ethnicity",
+    "visa_type",
     "age",
     "college",
     "degree",
     "major",
     "program",
     "term_gpa",
+    "min_grade_num",
+    "max_grade_num",
     "course_count",
+    "enrolled_w3",
+    "enrolled_eot",
     "persisted_w3_to_end",
     "undeclared_to_declared",
+    "admission_rating",
 ]
+
 
 def execute_single_query(conn, sql=SQL_SINGLE_QUERY) -> pd.DataFrame:
     """
